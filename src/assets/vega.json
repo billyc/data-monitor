@@ -1,8 +1,8 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc10.json",
   "description": "Billy's obsessive data obsession",
   "title": { "text": "Weight Data and Trendline" },
-  "width": 200,
+  "width": 400,
   "height": 400,
   "config": { "axis": { "grid": false } },
   "data": {
@@ -37,7 +37,7 @@
       }
     },
     {
-      "mark": { "type": "point", "size": 80, "fill": "#f60", "opacity": 1 },
+      "mark": { "type": "point", "size": 30, "fill": "#f60", "opacity": 1 },
       "encoding": {
         "x": { "field": "date", "type": "temporal" },
         "y": { "field": "weight", "type": "quantitative" }
