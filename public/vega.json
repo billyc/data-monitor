@@ -8,11 +8,12 @@
   "data": {
     "values": [
       { "date": "2018-12-06", "weight": 74.1, "trend": 74.1 },
-      { "date": "2018-12-07", "weight": 73.6, "trend": 74.045 },
+      { "date": "2018-12-07", "weight": 73.6, "trend": 74.04 },
       { "date": "2018-12-08", "weight": 73.9, "trend": 74.02 },
       { "date": "2018-12-09", "weight": 74.0, "trend": 74.02 },
       { "date": "2018-12-10", "weight": 72.3, "trend": 73.81 },
-      { "date": "2018-12-11", "weight": 72.3, "trend": 73.63 }
+      { "date": "2018-12-11", "weight": 72.3, "trend": 73.63 },
+      { "date": "2018-12-12", "weight": 73.5, "trend": 73.62 }
     ]
   },
   "layer": [
@@ -33,7 +34,7 @@
       "encoding": {
         "x": { "field": "date", "type": "temporal" },
         "y": { "field": "trend", "type": "quantitative" },
-        "strokeWidth": { "value": 3 }
+        "strokeWidth": { "value": 4 }
       }
     },
     {
