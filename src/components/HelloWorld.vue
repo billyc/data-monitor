@@ -14,7 +14,7 @@ export default class HelloWorld extends Vue {
   @Prop() private msg!: string
 
   public mounted() {
-    const spec = '/vega.json'
+    const spec = '/data-vega.json'
     embed('#vega', spec, {
       defaultStyle: true,
       renderer: 'svg',
