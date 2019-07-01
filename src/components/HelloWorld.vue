@@ -1,12 +1,15 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      <input size="8" v-model="entry" placeholder="kg">
-      <input size="12" v-model="entryDate">
-      <button @click="addEntry">Add Entry</button>
-      <button @click="removeLastEntry">Delete Last</button>
-    </p>
+    <h1 class="title">{{ msg }}</h1>
+    <div class="entry-bar">
+      <input size="6" v-model="entry" placeholder="kg">
+      &nbsp;
+      <input size="8" v-model="entryDate">
+      &nbsp;
+      <button class="button is-small is-link" @click="addEntry">Add Entry</button>
+      &nbsp;
+      <button class="button is-small is-inverse" @click="removeLastEntry">Erase Last</button>
+    </div>
     <hr>
     <div id="vega"></div>
   </div>
@@ -130,6 +133,18 @@ li {
 }
 a {
   color: #42b983;
+}
+
+.entry-bar {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0px 5px;
 }
 </style>
 
