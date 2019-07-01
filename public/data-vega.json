@@ -1,39 +1,24 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v3.0.0-rc10.json",
-  "description": "Billy's obsessive data obsession",
-  "title": { "text": "Weight Data and Trendline1" },
-  "width": 250,
+  "description": "",
+  "title": { "text": "Weight Data and Trendline" },
+  "width": 280,
   "height": 400,
   "config": { "axis": { "grid": false } },
   "data": {
-    "values": [
-      { "date": "2018-12-06", "weight": 74.1, "trend": 74.1 },
-      { "date": "2018-12-07", "weight": 73.6, "trend": 74.04 },
-      { "date": "2018-12-08", "weight": 73.9, "trend": 74.02 },
-      { "date": "2018-12-09", "weight": 74.0, "trend": 74.02 },
-      { "date": "2018-12-10", "weight": 72.3, "trend": 73.81 },
-      { "date": "2018-12-11", "weight": 72.3, "trend": 73.63 },
-      { "date": "2018-12-12", "weight": 73.5, "trend": 73.62 },
-      { "date": "2018-12-13", "weight": 74.0, "trend": 73.66 },
-      { "date": "2018-12-15", "weight": 74.2, "trend": 73.73 },
-      { "date": "2018-12-16", "weight": 73.8, "trend": 73.74 },
-      { "date": "2018-12-17", "weight": 73.8, "trend": 73.74 },
-      { "date": "2019-01-08", "weight": 72.9, "trend": 73.64 },
-      { "date": "2019-01-09", "weight": 72.9, "trend": 73.55 },
-      { "date": "2019-01-10", "weight": 72.5, "trend": 73.43 }
-    ]
+    "values": []
   },
   "layer": [
     {
       "mark": { "type": "errorbar", "color": "#4c4" },
       "encoding": {
         "x": { "field": "date", "type": "temporal" },
+        "y2": { "field": "trend", "type": "quantitative" },
         "y": {
           "field": "weight",
           "type": "quantitative",
-          "scale": { "domain": [72, 75] }
-        },
-        "y2": { "field": "trend", "type": "quantitative" }
+          "scale": { "domain": [] }
+        }
       }
     },
     {
@@ -45,7 +30,7 @@
       }
     },
     {
-      "mark": { "type": "point", "size": 50, "fill": "#f60", "opacity": 1 },
+      "mark": { "type": "point", "size": 40, "fill": "#f60", "opacity": 1 },
       "encoding": {
         "x": { "field": "date", "type": "temporal" },
         "y": { "field": "weight", "type": "quantitative" }

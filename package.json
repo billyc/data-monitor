@@ -12,10 +12,12 @@
   "dependencies": {
     "canvas": "^2.2.0",
     "firebase": "^6.2.2",
+    "firebaseui": "^4.0.0",
     "tslint-config-prettier": "^1.17.0",
-    "vega": "^4.4.0",
-    "vega-embed": "^3.26.1",
-    "vega-lite": "^3.0.0-rc10",
+    "vega": "^5.4.0",
+    "vega-embed": "^4.2.0",
+    "vega-lite": "^3.3.0",
+    "vega-typings": "^0.7.1",
     "vue": "^2.5.17",
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0"

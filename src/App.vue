@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Billy's obsessive data monitoring program."/>
+    <HelloWorld msg="Obsessive data monitoring program."/>
   </div>
 </template>
 
